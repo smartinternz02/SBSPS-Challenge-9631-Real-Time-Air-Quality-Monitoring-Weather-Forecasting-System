@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plan</title>
+    {% load static %}
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Air Quality Monitoring</h1>
+
+    <div  class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'about' %}">EOG</a></li>
+            <li><a href="{% url 'weather' %}">weather</a></li>
+            <li><a href="{% url 'Air' %}">Air Quality</a></li>
+            <li><a href="{% url 'contact' %}">team</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- Air section starts  -->
+
+<section class="Air">
+
+    <div class="content">
+        <h1>Air Quality Monitoring</h1>
+        <hr>
+        <form action="{% url 'Airout' %}" method="POST">
+            {% csrf_token %}
+
+            <div>  <label>
+               Enter the value of Pm25
+            </label>
+            <input type="number" step="any" name="pm25"  placeholder=" particulate matter 2.5"
+            required> <br><br><br><br></div>
+                    
+            <div>   <label >
+                Enter the value of Pm10
+            </label>
+            <input type="number" step="any" name="pm10"  placeholder="particulate matter 10" required> <br><br><br><br>  </div>
+            <div>
+                <label >
+                    Enter the  value  of (NO)  
+                </label>
+                <input type="number" step="any" name="no" placeholder="Nitric Oxide" required> <br><br><br><br>
+            </div>
+                   
+            <div>
+                <label >
+                    Enter the value of  NO2
+                </label>
+                <input type="number"step="any" name="no2" placeholder="Nitrogen Dioxide" required> <br><br><br><br>
+            </div>
+                    
+            <div>
+                <label >
+                    Enter the value of  NoX
+                </label>
+                <input type="number" step="any" name="nox" placeholder="Nitrogen Oxides" required> <br><br><br><br>
+            </div>
+                    
+            <div>
+                <label >
+                    Enter the value of  NH3
+                </label>
+                <input type="number" step="any" name="nh3" placeholder="Ammonia" required> <br><br><br><br>
+            </div>
+            
+            <div>
+                <label >
+                    Enter the value  of  (CO)
+                </label>
+                <input type="number" step="any" name="co" placeholder="Carbon Monoxide" required> <br><br><br><br>
+            </div>
+                    
+                   
+            
+            
+            <div>
+                <label >
+                    Enter the value of  SO2
+                </label>
+                <input type="number" step="any" name="so2" placeholder="Sulfur dioxide" required> <br><br><br><br>
+            </div>
+            
+            <div>
+                <label >
+                    Enter the value of  (Tol)
+                </label>
+                <input type="number" step="any" name="tol" placeholder="Toluene" required> <br><br><br><br>
+            </div>
+            <a href="#"><button class="btn">submit</button></a>
+                    </form>
+                    <h2> the output is :{{aqiq}}</h2><br>
+                <h2>the aqi is: {{ aqi }}</h2>
+                    
+                   
+                </div>
+                
+
+  
+
+    <div class="image">
+        <img src="{% static 'svg/enviroiment.svg' %}" alt="">
+    </div>
+
+</div>
+</section>
+      
+
+<!-- plan section ends -->
+
+
+<div class="footer">
+
+    <div class="box-container">
+
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">ACE Engineers</a> | IBM project. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{% static 'scripts/script.js' %}"></script>
+
+</body>
+</html>

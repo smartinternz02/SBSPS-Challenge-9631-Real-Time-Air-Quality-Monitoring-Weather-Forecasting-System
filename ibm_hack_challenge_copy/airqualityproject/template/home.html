@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    {% load static %}
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">home</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        
+        <ul>
+            <li><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'about' %}">EOG</a></li>
+            <li><a href="{% url 'weather' %}">weather</a></li>
+            <li><a href="{% url 'Air' %}">Air Quality</a></li>
+            <li><a href="{% url 'contact' %}">team</a></li>
+        </ul>
+
+        
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- about section start  -->
+
+<section class="about">
+
+    <div class="image">
+        <img src="./static/svg/climatehome.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h1>Real time Air Quality Monitoring and Weather Forecasting</h1>
+        <p>As for consumables, the most proportionate intake of humans is considered to be air. As of recent outbreaks, the air around the living systems is being polluted in different possible lookouts. By predicting the gas percentage in the air, it is possible to variate the number of toxic gases present in the air.</p>
+        <p>On the account of previously present data’s on-air quality, the fluctuations and concentration of other gases could be predicted using Machine learning. While considering weather forecasting, capturing the periodic patterns in previous data will yield results with future occurrences and necessary precautions. A user Interface and   a dashboard will be provided as an implementation along with analytics as an outcome confronting the problem.</p>
+        <a href="https://en.wikipedia.org/wiki/Air_quality_index"><button class="btn">learn more</button></a>
+    </div>
+
+    <div class="main">
+
+        <div class="container">
+  
+
+<div class="blog">
+
+    <h2 class="h2">Description:</h2>
+
+    <div class="blog-card-group">
+
+      <div class="blog-card">
+
+        <div class="blog-card-banner">
+          <img src="./static/images/weather.jpg" alt="Bur"
+            width="120px" class="blog-banner-img">
+        </div>
+
+        <div class="blog-content-wrapper">
+
+          <button class="blog-topic text-tiny">Weather Forecasting</button>
+
+          
+
+          <p class="blog-text">
+            Weather forecasting is the application of science and technology to predict the conditions of the atmosphere for a given location and time. People have attempted to predict the weather informally for millennia and formally since the 19th century.
+          </p>
+
+          <div class="wrapper-flex">
+
+           
+
+            <div class="wrapper">
+              <a href="https://en.wikipedia.org/wiki/Weather_forecasting" class="h4">Read More..</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="blog-card">
+
+        <div class="blog-card-banner">
+          <img src="./static/images/AQI.jpg" alt="Fae" width="120"
+            class="blog-banner-img">
+        </div>
+
+        <div class="blog-content-wrapper">
+
+          <button class="blog-topic text-tiny">Air Quality Index</button>
+
+          
+
+          <p class="blog-text">
+            The Air Quality Index (AQI) is a tool for reporting daily air quality. It tells you how clean or polluted your air is and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air. AQI information is obtained by averaging readings from an air quality sensor, which can increase due to vehicle traffic, forest fires, or anything that can increase air pollution. Pollutants tested include ozone, nitrogen dioxide, sulphur dioxide, among others.
+          </p>
+
+          <div class="wrapper-flex">
+
+            <div class="wrapper">
+              <a href="https://en.wikipedia.org/wiki/Air_quality_index" class="h4">Read More..</a>
+
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+</div>
+
+    </section>
+
+<!-- about section ends -->
+
+
+<div class="footer">
+
+    <div class="box-container">
+
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">ACE Engineers</a> | IBM project . </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="./static/scripts/script.js"></script>
+
+</body>
+</html>
