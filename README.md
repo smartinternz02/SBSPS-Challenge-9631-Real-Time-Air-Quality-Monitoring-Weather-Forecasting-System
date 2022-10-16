@@ -11,4 +11,4 @@ this is a project to predict the Air quality index with some gases values
   4.Team member - joel
   
   
-Our website link : https://irqualityindexml.herokuapp.com/
+Our website link : https://acemlaqi.herokuapp.com/
