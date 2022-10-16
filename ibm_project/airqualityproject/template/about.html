@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects of Gases</title>
+    {% load static %}
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static '\css\style.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading"> Effects of Gases</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'about' %}">EOG</a></li>
+            <li><a href="{% url 'weather' %}">weather</a></li>
+            <li><a href="{% url 'Air' %}">Air Quality</a></li>
+            <li><a href="{% url 'contact' %}">team</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h2>PO2.5</h2>
+            <h3>Particulate Matter</h3>
+            <p>Most studies indicate PM2. 5 at or below 12 μg/m3 is considered healthy with little to no risk from exposure. If the level goes to or above 35 μg/m3 during a 24-hour period, the air is considered unhealthy and can cause issues for people with existing breathing issues such as asthma.</p>
+        </div>
+
+        <div class="box">
+            <h2>No2</h2>
+            <h3>Nitrogen Dioxide</h3>
+            <p>There is also an association between nitrogen dioxide concentrations in the air and increases in mortality and hospital admissions for respiratory disease, Exposure above 150 ppm for 30 min to an hour results in fatal pulmonary edema or asphyxia and can result in rapid death. </p>
+        </div>
+
+        <div class="box">
+            <h2>So2</h2>
+            <h3>Sulphur Dioxide</h3>
+            <p>Sulfur dioxide affects the respiratory system,particularly lung function and irritate the eyes,Exposure to very high levels of sulfur dioxide can be life threatening.Exposure to 100 parts of so2 per million parts of air (100 ppm)is considered immediately danger to our life and health.</p>
+        </div>
+
+        <div class="box">
+            <h2>03</h2>
+            <h3>Ozone</h3>
+            <p>People exposed to elevated levels of ozone may experience a variety of symptoms. The most common symptom is a feeling of irritation in the eyes, nose and throat. Some people may also experience respiratory or heart symptoms such as shortness of breath, chest pain, and wheezing.</p>
+        </div>
+
+        <div class="box">
+            <h2>CO</h2>
+            <h3>Carbon Monoxide</h3>
+            <p> As CO levels increase and remain above 70 ppm,symptoms become more noticeable and can include headache,fatigue and nausea,The U.S National Ambient Air Quality Standards for outdoor air are 9 ppm.At sustained CO concentrations above 150 to 200 ppm,unconsciousness and death are possible.</p>
+        </div>
+
+        <div class="box">
+            <h2>NH3</h2>
+            <h3>Ammonia</h3>
+            <p>Ammonia is highly toxic. Blood ammonia levels are usually less than 50(micromol/L), but this can vary depending on age. An increase to only 100 micromol/L can lead to changes in consciousness.A blood ammonia level of 200 micromol/L is associated with coma and convulsions.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+
+<div class="footer">
+
+    <div class="box-container">
+
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">ACE Engineers</a> | IBM project. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{% static 'scripts/script.js' %}"></script>
+
+</body>
+</html>
